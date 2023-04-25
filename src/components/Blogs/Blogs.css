@@ -1,12 +1,14 @@
 .blogs-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 16px;
+    margin: 35px 0;
 }
 
 .blog-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 150px;
+    /* margin: 0 150px; */
 }
 
 
@@ -17,4 +19,8 @@
     background-color: rgba(96, 71, 236, 0.1);
     border: 1px solid #6047EC;
     border-radius: 8px;
+}
+.spent-time h4{
+    margin: 10px;
+
 }
