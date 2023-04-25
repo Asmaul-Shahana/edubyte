@@ -20,7 +20,14 @@
     border: 1px solid #6047EC;
     border-radius: 8px;
 }
-.spent-time h4{
+
+.spent-time h4 {
     margin: 10px;
 
+}
+
+.bookmark-container {
+    margin-top: 15px;
+    background-color: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
 }

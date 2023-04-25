@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 const Blog = ({ blog }) => {
-    const { img, author, title, dp, publish, time } = blog;
+    // console.log(blog);
+    const { id, img, author, title, dp, publish, time } = blog;
+//    const handleAddBookmark = blog.handleAddBookmark;
     return (
         <div className='blog'>
             <img className='blog-img' src={img} alt="banner" />
@@ -20,6 +22,7 @@ const Blog = ({ blog }) => {
                     <div className='bookmark-sec'>
                         <h6>{time} min read</h6>
                        <button> <FontAwesomeIcon icon={faBookmark} /></button>
+                       {/* onClick={() => handleAddBookmark(blog)} */}
                     </div>
                 </div>
                 <h2>{title}</h2>
