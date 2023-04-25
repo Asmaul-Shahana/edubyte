@@ -1,0 +1,20 @@
+.blogs-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 150px;
+}
+
+
+.spent-time {
+    color: #6047EC;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+}

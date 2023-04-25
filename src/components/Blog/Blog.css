@@ -1,0 +1,36 @@
+.blog-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.author-dp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.blog h4 {
+    font-weight: 700;
+    margin: 0;
+    line-height: 160%;
+
+}
+
+.blog p,
+h6 {
+    margin: 0;
+    color: rgba(17, 17, 17, 0.6);
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.blog-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
