@@ -24,6 +24,9 @@
     background-color: rgba(96, 71, 236, 0.1);
     border: 1px solid #6047EC;
     border-radius: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .spent-time h4 {
@@ -31,9 +34,9 @@
 }
 
 .bookmark-container {
-
     position: sticky;
-    top: 0;
+    top: 100px;
+    z-index: 2;
     text-align: center;
     margin-top: 15px;
     padding: 8px;
