@@ -10,6 +10,14 @@
     margin: 35px 0;
 }
 
+.questions h4{
+    margin: 0;
+}
+
+.questions p{
+    color: #474747;
+}
+
 .blog-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
