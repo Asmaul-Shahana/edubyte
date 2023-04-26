@@ -1,0 +1,11 @@
+.bookmark {
+    padding: 16px 10px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.bookmark h4{
+    font-size: 18px;
+    margin: 0;
+}

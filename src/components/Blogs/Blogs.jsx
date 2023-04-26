@@ -8,7 +8,7 @@ const Blogs = () => {
 
     const [bookmark, setBookmark] = useState([]);
 
-    const handleAddBookmark = (blog) =>{
+    const handleAddBookmark = (blog) => {
         // console.log(blog);
         const newBookmark = [...bookmark, blog];
         setBookmark(newBookmark);
@@ -24,7 +24,8 @@ const Blogs = () => {
         <div className='blogs-container'>
             <div className='blog-container'>
                 {
-                    blogs.map(blog => <Blog key={blog.id} blog={blog}handleAddBookmark={handleAddBookmark}></Blog>)
+                    blogs.map(blog => <Blog key={blog.id} blog={blog}
+                        handleAddBookmark={handleAddBookmark}></Blog>)
                 }
             </div>
             <div className='bookmarks-container'>
@@ -32,7 +33,8 @@ const Blogs = () => {
                     <h4>Spent time on read: min</h4>
                 </div>
                 <div className='bookmark-container'>
-                    <Bookmark bookmark={bookmark}></Bookmark>
+                    <h4>Bookmarked Blogs : {bookmark.length}</h4>
+                    <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>
                 </div>
             </div>
         </div>
