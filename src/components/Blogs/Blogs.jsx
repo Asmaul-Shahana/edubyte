@@ -75,7 +75,7 @@ const Blogs = () => {
             </div>
             <div className='bookmarks-container'>
                 <div className='spent-time'>
-                    <h4>Spent time on read: {read.length === 0 ? 0 : read}</h4>
+                    <h4>Spent time on read: {read.length === 0 ? 0 : read} min</h4>
                 </div>
                 <div className='bookmark-container'>
                     <h4>Bookmarked Blogs : {bookmark.length}</h4>
