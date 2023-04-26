@@ -53,7 +53,7 @@ const Blogs = () => {
                     <h4>What is the difference between props and state?</h4>
                     <p>Props is the short for properties and are passed down from a parent to a child component. Where as state is internal data of a component.</p>
                     <p>Props are used to pass data as arguments of a function to child components and communicate with other components. State is used to manage data of the specific component.</p>
-                    <p>Props are read-only and unidirectional and cannot be modified by child components.</p>
+                    <p>Props are read-only and unidirectional and cannot be modified by child components whereas states are changeable.</p>
                     <hr />
                     <h4>How does useState work?</h4>
                     <p>useState is used to manage state of components. It returns an array of two values: the currrent state (state) and a function that updates the state (setState). When the state is updated by the setState function, the component re-renders.</p>
