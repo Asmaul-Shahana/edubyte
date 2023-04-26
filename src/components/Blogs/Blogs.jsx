@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Blogs.css';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -9,9 +11,14 @@ const Blogs = () => {
     const [bookmark, setBookmark] = useState([]);
 
     const handleAddBookmark = (blog) => {
-        // console.log(blog);
-        const newBookmark = [...bookmark, blog];
-        setBookmark(newBookmark);
+        const exists = bookmark.find(bm => bm.id === blog.id);
+        if (exists) {
+         toast('This blog is already bookmarked');
+        }
+        else {
+            const newBookmark = [...bookmark, blog];
+            setBookmark(newBookmark);
+        }
     }
 
     useEffect(() => {
